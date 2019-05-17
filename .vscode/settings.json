@@ -1,0 +1,30 @@
+{
+    "liveSassCompile.settings.formats": [{
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/includes/css/"
+        },
+        {
+            "extensionName": ".min.css",
+            "format": "compressed",
+            "savePath": "/includes/css/compressed/"
+        },
+        {
+            "extensionName": ".css",
+            "format": "nested",
+            "savePath": "/includes/css/"
+        }
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+    ],
+    "emmet.triggerExpansionOnTab": true,
+    "crane.phpstubsZipFile": "https://github.com/KESFANTIN/gastos.git",
+    "sync.gist": "https://github.com/KESFANTIN/gastos.git"
+}
