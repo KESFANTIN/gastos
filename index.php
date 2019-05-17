@@ -1,21 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<?php 
+    // Header
+    include_once 'includes/header.php';
+?>
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
+<div class="row">
+    <div class="col s12 m6 push-m3 green">
+        <p class="red">teste</p>
+    </div>
+</div>
 
-<body>
-
-    
-
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-</body>
-</html>
+<?php
+    // Footer
+    include_once 'includes/footer.php';
+?>
