@@ -12,39 +12,39 @@
     endif;
 ?>
 
-<div class="row">
-    <div class="col s12 m6 push-m3">
+<div class="container">
+    <div class="row m6 push-m3">
         <h3 class="ligth">Editar Gasto</h3>
 
         <form action="php_action/update.php" method="POST">
         <input type="hidden" name="id" value="<?php echo $dados['id'] ?>">
             <div class="input-field col s6">
                 <i class="material-icons prefix">calendar_today</i>
-                <input type="date" name="datacompra" id="datacompra" value="<?php echo $dados['datacompra'] ?>">
+                <input type="date" name="datacompra" id="datacompra" required value="<?php echo $dados['datacompra'] ?>">
                 <label for="datacompra">Data da Compra</label>
             </div>
 
             <div class="input-field col s6">
                 <i class="material-icons prefix">access_time</i>
-                <input type="time" name="hora" id="hora" value="<?php echo $dados['hora'] ?>">
+                <input type="time" name="hora" id="hora" required value="<?php echo $dados['hora'] ?>">
                 <label for="hora">Hora</label>
             </div>
 
             <div class="input-field col s12">
                 <i class="material-icons prefix">redeem</i>
-                <input type="text" name="produto" id="produto" value="<?php echo $dados['produto'] ?>">
+                <input type="text" name="produto" id="produto" required value="<?php echo $dados['produto'] ?>">
                 <label for="produto">Produto</label>
             </div>
 
             <div class="input-field col s6">
                 <i class="material-icons prefix">playlist_add</i>
-                <input type="number" name="quantidade" id="quantidade" value="<?php echo $dados['quantidade'] ?>">
+                <input type="number" name="quantidade" id="quantidade" required value="<?php echo $dados['quantidade'] ?>">
                 <label for="quantidade">Quantidade</label>
             </div>
 
             <div class="input-field col s6">
                 <i class="material-icons prefix">attach_money</i>
-                <input type="text" onkeyup="k(this);" name="valor" id="valor" value="<?php echo $dados['valor'] ?>">
+                <input type="text" onkeyup="k(this);" name="valor" required id="valor" value="<?php echo $dados['valor'] ?>">
                 <label for="valor">Valor</label>
             </div>
 
