@@ -34,7 +34,7 @@
 
             <div class="input-field col s6">
                 <i class="material-icons prefix">attach_money</i>
-                <input type="number" name="valor" id="valor">
+                <input type="cuRRENCY" name="valor" id="valor">
                 <label for="valor">Valor</label>
             </div>
 

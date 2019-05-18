@@ -9,12 +9,13 @@
         $quantidade = mysqli_escape_string($connect, $_POST['quantidade']);
         $valor = mysqli_escape_string($connect, $_POST['valor']);
 
+
         $sql = "INSERT INTO fgastos (dia, hora, produto, quantidade, valor) VALUES ('$dia', '$hora', '$produto', '$quantidade', '$valor')";
 
         if (mysqli_query($connect, $sql)):
-            header('Location: index.php?Sucesso');
+            header('Location: ../index.php?Sucesso');
         else:
-            header('Location: index.php?Erro');
+            header('Location: ../index.php?Erro');
         endif;
     endif;
 ?>
