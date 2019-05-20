@@ -47,18 +47,18 @@
                     
                     <!-- Modal Structure -->
                     <div id="modal<?php echo $dados['id']; ?>" class="modal">
-                        <div class="modal-content">
-                        <h4 class="center"><i class="large material-icons">add_alert</i></h4>
+                        <div class="modal-content center">
+                        <h4 class="btn-floating pulse red"><i class="large material-icons">add_alert</i></h4>
                         <p class="center">Tem certeza que deseja excluir este registro?</p>
                         </div>
-                        <div class="modal-footer">
+                        <div class="modal-footer" >
 
-                        <form action="php_action/delete.php" method="POST">
-                            <input type="hidden" name="id" value="<?php echo $dados['id']; ?>">
-                            <button type="submit" name="btn-deletar" class="btn red">Sim, quero deletar</button>
+                            <form action="php_action/delete.php" method="POST">
+                                <input type="hidden" name="id" value="<?php echo $dados['id']; ?>">
+                                <button type="submit" name="btn-deletar" class="btn red">Sim, quero deletar</button>
 
-                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
-                        </form>
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
+                            </form>
 
                         </div>
                     </div>
@@ -88,7 +88,7 @@
         </table>
         <br>
         <a href="adicionar.php" class="wave-ligth btn-small"><i class="material-icons left">add</i>Novo</a>
-        <ul class="pagination center">
+        <!-- <ul class="pagination center">
             <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
             <li class="active orange"><a href="#!">1</a></li>
             <li class="waves-effect"><a href="#!">2</a></li>
@@ -96,7 +96,7 @@
             <li class="waves-effect"><a href="#!">4</a></li>
             <li class="waves-effect"><a href="#!">5</a></li>
             <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-        </ul>
+        </ul> -->
     </div>
 </div>
 

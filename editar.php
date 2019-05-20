@@ -53,8 +53,11 @@
                 <label for="valor">Valor</label>
             </div>
 
-            <button type="submit" name="btn-editar" class="btn green"><i class="material-icons left">add</i>Atualizar</button>
-            <a class="btn blue" href="index.php"><i class="material-icons left">list</i>Listar os Gastos</a>
+            <div class="center row s12 m6 l4">
+                <button type="submit" name="btn-editar" class="btn"><i class="material-icons left">add</i>Atualizar</button>
+                <a class="btn blue" href="index.php"><i class="material-icons left">list</i>Listar os Gastos</a>
+            </div>
+
         </form>
     
     </div>
