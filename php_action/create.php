@@ -16,13 +16,14 @@
 
     if (isset($_POST['btn-cadastrar'])):
         $datacompra = mysqli_escape_string($connect, $_POST['datacompra']);
-        $hora = mysqli_escape_string($connect, $_POST['hora']);
+        $estabelecimento = mysqli_escape_string($connect, $_POST['estabelecimento']);
         $produto = mysqli_escape_string($connect, $_POST['produto']);
+        $marca = mysqli_escape_string($connect, $_POST['marca']);
         $quantidade = mysqli_escape_string($connect, $_POST['quantidade']);
         $valor = mysqli_escape_string($connect, $_POST['valor']);
 
 
-        $sql = "INSERT INTO fgastos (datacompra, hora, produto, quantidade, valor) VALUES ('$datacompra', '$hora', '$produto', '$quantidade', '$valor')";
+        $sql = "INSERT INTO fgastos (datacompra, estabelecimento, produto, marca, quantidade, valor) VALUES ('$datacompra', '$estabelecimento', '$produto', '$marca', '$quantidade', '$valor')";
 
         if (mysqli_query($connect, $sql)):
             $_SESSION['mensagem'] = "Cadastrado com sucesso!";

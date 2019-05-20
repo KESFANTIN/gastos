@@ -15,15 +15,21 @@
             </div>
 
             <div class="input-field col s6">
-                <i class="material-icons prefix">access_time</i>
-                <input type="time" name="hora" id="hora" required>
-                <label for="hora">Hora</label>
+                <i class="material-icons prefix">shopping_cart</i>
+                <input type="text" name="estabelecimento" id="estabelecimento" required>
+                <label for="estabelecimento">Estabelecimento*</label>
             </div>
 
-            <div class="input-field col s12">
+            <div class="input-field col s6">
                 <i class="material-icons prefix">redeem</i>
                 <input type="text" name="produto" id="produto" required>
                 <label for="produto">Produto*</label>
+            </div>
+
+            <div class="input-field col s6">
+                <i class="material-icons prefix">bookmark_border</i>
+                <input type="text" name="marca" id="marca" required>
+                <label for="marca">Marca*</label>
             </div>
 
             <div class="input-field col s6">

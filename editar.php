@@ -14,7 +14,7 @@
 
 <div class="container">
     <div class="row m6 push-m3">
-        <h3 class="ligth">Editar Gasto</h3>
+        <h3 class="ligth">Editar Compra</h3>
 
         <form action="php_action/update.php" method="POST">
         <input type="hidden" name="id" value="<?php echo $dados['id'] ?>">
@@ -25,15 +25,20 @@
             </div>
 
             <div class="input-field col s6">
-                <i class="material-icons prefix">access_time</i>
-                <input type="time" name="hora" id="hora" required value="<?php echo $dados['hora'] ?>">
-                <label for="hora">Hora</label>
+                <i class="material-icons prefix">shopping_cart</i>
+                <input type="text" name="estabelecimento" id="datacompra" required value="<?php echo $dados['estabelecimento'] ?>">
+                <label for="estabelecimento">Estabelecimento</label>
             </div>
 
-            <div class="input-field col s12">
+            <div class="input-field col s6">
                 <i class="material-icons prefix">redeem</i>
                 <input type="text" name="produto" id="produto" required value="<?php echo $dados['produto'] ?>">
                 <label for="produto">Produto</label>
+            </div>
+            <div class="input-field col s6">
+                <i class="material-icons prefix">bookmark_border</i>
+                <input type="text" name="marca" id="marca" required value="<?php echo $dados['marca'] ?>">
+                <label for="marca">Marca</label>
             </div>
 
             <div class="input-field col s6">

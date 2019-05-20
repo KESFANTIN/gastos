@@ -16,8 +16,9 @@
             <thead>
                 <tr>
                     <th>Data da Compra:</th>
-                    <th>Hora:</th>
+                    <th>Estabelecimento:</th>
                     <th>Produto:</th>
+                    <th>Marca:</th>
                     <th>Quantidade:</th>
                     <th>Valor:</th>
                     <th>Ações:</th>
@@ -36,12 +37,12 @@
                 ?>
                 <tr>
                     <td><?php echo $dados['datacompra']; ?></td>
-                    <td><?php echo $dados['hora']; ?></td>
+                    <td><?php echo $dados['estabelecimento']; ?></td>
                     <td><?php echo $dados['produto']; ?></td>
+                    <td><?php echo $dados['marca']; ?></td>
                     <td><?php echo $dados['quantidade']; ?></td>
                     <td>R$ <?php echo $dados['valor']; ?></td>
                     <td><a href="editar.php?id=<?php echo $dados['id']; ?>" class="btn-floating btn-small orange"><i class="material-icons">edit</i></a></td>
-
                     <td><a href="#modal<?php echo $dados['id']; ?>" class="btn-floating btn-small red modal-trigger"><i class="material-icons">delete</i></a></td>
                     
                     <!-- Modal Structure -->
@@ -70,6 +71,7 @@
                 ?>
 
                     <tr>
+                        <td>-</td>
                         <td>-</td>
                         <td>-</td>
                         <td>-</td>
