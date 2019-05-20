@@ -18,36 +18,36 @@
 
         <form action="php_action/update.php" method="POST">
         <input type="hidden" name="id" value="<?php echo $dados['id'] ?>">
-            <div class="input-field col s6">
+            <div class="input-field col s12 m6 l4">
                 <i class="material-icons prefix">calendar_today</i>
                 <input type="date" name="datacompra" id="datacompra" required value="<?php echo $dados['datacompra'] ?>">
                 <label for="datacompra">Data da Compra</label>
             </div>
 
-            <div class="input-field col s6">
+            <div class="input-field col s12 m6 l4">
                 <i class="material-icons prefix">shopping_cart</i>
                 <input type="text" name="estabelecimento" id="datacompra" required value="<?php echo $dados['estabelecimento'] ?>">
                 <label for="estabelecimento">Estabelecimento</label>
             </div>
 
-            <div class="input-field col s6">
+            <div class="input-field col s12 m6 l4">
                 <i class="material-icons prefix">redeem</i>
                 <input type="text" name="produto" id="produto" required value="<?php echo $dados['produto'] ?>">
                 <label for="produto">Produto</label>
             </div>
-            <div class="input-field col s6">
+            <div class="input-field col s12 m6 l4">
                 <i class="material-icons prefix">bookmark_border</i>
                 <input type="text" name="marca" id="marca" required value="<?php echo $dados['marca'] ?>">
                 <label for="marca">Marca</label>
             </div>
 
-            <div class="input-field col s6">
+            <div class="input-field col s12 m6 l4">
                 <i class="material-icons prefix">playlist_add</i>
                 <input type="number" name="quantidade" id="quantidade" required value="<?php echo $dados['quantidade'] ?>">
                 <label for="quantidade">Quantidade</label>
             </div>
 
-            <div class="input-field col s6">
+            <div class="input-field col s12 m6 l4">
                 <i class="material-icons prefix">attach_money</i>
                 <input type="text" onkeyup="k(this);" name="valor" required id="valor" value="<?php echo $dados['valor'] ?>">
                 <label for="valor">Valor</label>

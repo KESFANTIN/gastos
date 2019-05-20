@@ -12,7 +12,7 @@
         <h3 class="ligth">Compras</h3>
         <br>
         <a href="adicionar.php" class="wave-ligth btn-small"><i class="material-icons left">add</i>Novo</a>
-        <table class="striped">
+        <table class="responsive-table striped">
             <thead>
                 <tr>
                     <th>Data da Compra:</th>
@@ -48,8 +48,8 @@
                     <!-- Modal Structure -->
                     <div id="modal<?php echo $dados['id']; ?>" class="modal">
                         <div class="modal-content">
-                        <h4>Opa!</h4>
-                        <p>Tem certeza que deseja excluir este registro?</p>
+                        <h4 class="center"><i class="large material-icons">add_alert</i></h4>
+                        <p class="center">Tem certeza que deseja excluir este registro?</p>
                         </div>
                         <div class="modal-footer">
 
@@ -88,7 +88,15 @@
         </table>
         <br>
         <a href="adicionar.php" class="wave-ligth btn-small"><i class="material-icons left">add</i>Novo</a>
-    
+        <ul class="pagination center">
+            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+            <li class="active orange"><a href="#!">1</a></li>
+            <li class="waves-effect"><a href="#!">2</a></li>
+            <li class="waves-effect"><a href="#!">3</a></li>
+            <li class="waves-effect"><a href="#!">4</a></li>
+            <li class="waves-effect"><a href="#!">5</a></li>
+            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+        </ul>
     </div>
 </div>
 

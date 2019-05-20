@@ -13,8 +13,8 @@
     <!--Import reset.css
     <link rel="stylesheet" type="text/css" media="screen" href="includes/css/compressed/reset.min.css" /> -->
 
-    <!--Import main.css
-    <link rel="stylesheet" type="text/css" media="screen" href="includes/css/main.css"> -->
+    <!--Import main.css-->
+    <link rel="stylesheet" type="text/css" media="screen" href="includes/css/main.css">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
