@@ -18,12 +18,16 @@
         $datacompra = mysqli_escape_string($connect, $_POST['datacompra']);
         $estabelecimento = mysqli_escape_string($connect, $_POST['estabelecimento']);
         $produto = mysqli_escape_string($connect, $_POST['produto']);
+        $categoria = mysqli_escape_string($connect, $_POST['categoria']);
         $marca = mysqli_escape_string($connect, $_POST['marca']);
         $quantidade = mysqli_escape_string($connect, $_POST['quantidade']);
+        $unidade = mysqli_escape_string($connect, $_POST['unidade']);
         $valor = mysqli_escape_string($connect, $_POST['valor']);
+        $pagamento = mysqli_escape_string($connect, $_POST['pagamento']);
 
 
-        $sql = "INSERT INTO fgastos (datacompra, estabelecimento, produto, marca, quantidade, valor) VALUES ('$datacompra', '$estabelecimento', '$produto', '$marca', '$quantidade', '$valor')";
+        $sql = "INSERT INTO fgastos (datacompra, estabelecimento, produto, categoria, marca, quantidade, unidade, valor, pagamento) 
+                VALUES ('$datacompra', '$estabelecimento', '$produto', '$categoria', '$marca', '$quantidade', '$unidade', '$valor', '$pagamento')";
 
         if (mysqli_query($connect, $sql)):
             $_SESSION['mensagem'] = "Cadastrado com sucesso!";

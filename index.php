@@ -7,6 +7,7 @@
     include_once 'includes/mensagem.php';
 ?>
 
+
 <div class="container">
     <div class="row m6 push-m3">
         <h3 class="ligth">Compras</h3>
@@ -21,6 +22,7 @@
                     <th>Marca:</th>
                     <th>Quantidade:</th>
                     <th>Valor:</th>
+                    <th>Total:</th>
                     <th>Ações:</th>
                 </tr>
             </thead>
@@ -35,8 +37,16 @@
 
                     while ($dados = mysqli_fetch_array($resultado)):
 
-                ?>
+                    $qtd = $dados['quantidade'];
+                    $val = $dados['valor'];
 
+                    //$qtd = floatval(str_replace(",", ".", $qtd));
+                    $val = floatval(str_replace(",", ".", $val));
+
+                    $total = $qtd*$val;
+                    
+            
+                ?>
                 <tr>
                     <td><?php echo date('d/m/Y', strtotime($dados['datacompra'])); ?></td>
                     <td><?php echo $dados['estabelecimento']; ?></td>
@@ -44,9 +54,10 @@
                     <td><?php echo $dados['marca']; ?></td>
                     <td><?php echo $dados['quantidade']; ?></td>
                     <td>R$ <?php echo $dados['valor']; ?></td>
-                    <td><a href="editar.php?id=<?php echo $dados['id']; ?>" class="btn-floating btn-small orange"><i class="material-icons">edit</i></a></td>
-                    <td><a href="#modal<?php echo $dados['id']; ?>" class="btn-floating btn-small red modal-trigger"><i class="material-icons">delete</i></a></td>
-
+                    <td><?php echo $total;?> </td>
+                    <td><a href="detalhe.php?id=<?php echo $dados['id']; ?>" class="wave-ligth btn-small orange"><i class="material-icons left">description</i>Detalhe</a></td>
+                    <!-- <td><a href="editar.php?id=<?php //echo $dados['id']; ?>" class="btn-floating btn-small orange"><i class="material-icons">edit</i></a></td>-->
+                    <!-- <td><a href="#modal<?php //echo $dados['id']; ?>" class="btn-floating btn-small red modal-trigger"><i class="material-icons">delete</i></a></td>  -->
 
                     <!-- Modal Structure -->
                     <div id="modal<?php echo $dados['id']; ?>" class="modal">
