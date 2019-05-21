@@ -34,9 +34,11 @@
 
 
                     while ($dados = mysqli_fetch_array($resultado)):
+
                 ?>
+
                 <tr>
-                    <td><?php echo $dados['datacompra']; ?></td>
+                    <td><?php echo date('d/m/Y', strtotime($dados['datacompra'])); ?></td>
                     <td><?php echo $dados['estabelecimento']; ?></td>
                     <td><?php echo $dados['produto']; ?></td>
                     <td><?php echo $dados['marca']; ?></td>
@@ -44,7 +46,8 @@
                     <td>R$ <?php echo $dados['valor']; ?></td>
                     <td><a href="editar.php?id=<?php echo $dados['id']; ?>" class="btn-floating btn-small orange"><i class="material-icons">edit</i></a></td>
                     <td><a href="#modal<?php echo $dados['id']; ?>" class="btn-floating btn-small red modal-trigger"><i class="material-icons">delete</i></a></td>
-                    
+
+
                     <!-- Modal Structure -->
                     <div id="modal<?php echo $dados['id']; ?>" class="modal">
                         <div class="modal-content center">
