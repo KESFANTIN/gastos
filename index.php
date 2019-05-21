@@ -22,7 +22,7 @@
                             <th>Marca:</th>
                             <th>Quantidade:</th>
                             <th>Valor:</th>
-                            <th>Total:</th>
+                            <!-- <th>Total:</th> -->
                             <th>Ações:</th>
                         </tr>
                     </thead>
