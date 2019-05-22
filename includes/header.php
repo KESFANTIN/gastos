@@ -48,8 +48,8 @@
         <img src="">
       </div>
       
-      <a href="#name"><span class="blue-text name">John Doe</span></a>
-      <a href="#email"><span class="blue-text email">jdandturk@gmail.com</span></a>
+      <a href="#name"><span class="blue-text name">Klayton Fantin</span></a>
+      <a href="#email"><span class="blue-text email">klayton@datadf.com.br</span></a>
     </div></li>
     <li><a href="index.php"><i class="material-icons">list</i>Listas de Compras</a></li>
     <li><a href="adicionar.php"><i class="material-icons">add</i>Cadastrar Produto</a></li>

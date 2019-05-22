@@ -3,6 +3,9 @@
   .top a {
     margin-bottom: 5px; }
 
+th {
+  width: 30px; }
+
 .dataTables_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -13,14 +13,14 @@
                 <h3 class="ligth">Compras</h3>
                 <br>
                 <a href="adicionar.php" class="wave-ligth btn-small"><i class="material-icons left">add</i>Novo</a>
-                <table class="striped" id="tabela_lista" data-page-length='5'>
+                <table class="responsive-table row-border" style="width:100%" id="tabela_lista" data-page-length='6'>
                     <thead>
                         <tr>
                             <th>Data:</th>
                             <!-- <th>Estabelecimento:</th> -->
                             <th>Produto:</th>
                             <!-- <th>Marca:</th> -->
-                            <th>Quantidade:</th>
+                            <!-- <th>Quantidade:</th> -->
                             <th>Valor:</th>
                             <!-- <th>Total:</th> -->
                             <th>Ações:</th>
@@ -52,7 +52,7 @@
                             <!-- <td><?php //echo $dados['estabelecimento']; ?></td> -->
                             <td><?php echo $dados['produto']; ?></td>
                             <!-- <td><?php //echo $dados['marca']; ?></td> -->
-                            <td><?php echo $dados['quantidade']; ?></td>
+                            <!-- <td><?php //echo $dados['quantidade']; ?></td> -->
                             <td>R$ <?php echo $dados['valor']; ?></td>
                             <!-- <td><?php //echo $total;?> </td> -->
                             <td><a href="detalhe.php?id=<?php echo $dados['id']; ?>" class="wave-ligth btn-small btn-floating orange"><i class="material-icons left">description</i></a></td>
@@ -89,9 +89,9 @@
                                 <td>-</td>
                                 <td>-</td>
                                 <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
+                                <!-- <td>-</td> -->
+                                <!-- <td>-</td>
+                                <td>-</td> -->
                             </tr>
 
                         <?php
@@ -101,8 +101,8 @@
                     </tbody>
 
                 </table>
-                <br>
-                <a href="adicionar.php" class="wave-ligth btn-small"><i class="material-icons left">add</i>Novo</a>
+                <!-- <br>
+                <a href="adicionar.php" class="wave-ligth btn-small"><i class="material-icons left">add</i>Novo</a> -->
                 <!-- <ul class="pagination center">
                     <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
                     <li class="active orange"><a href="#!">1</a></li>
