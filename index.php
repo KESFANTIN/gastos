@@ -13,13 +13,13 @@
                 <h3 class="ligth">Compras</h3>
                 <br>
                 <a href="adicionar.php" class="wave-ligth btn-small"><i class="material-icons left">add</i>Novo</a>
-                <table class="responsive-table striped">
+                <table class="striped" id="tabela_lista" data-page-length='5'>
                     <thead>
                         <tr>
-                            <th>Data da Compra:</th>
-                            <th>Estabelecimento:</th>
+                            <th>Data:</th>
+                            <!-- <th>Estabelecimento:</th> -->
                             <th>Produto:</th>
-                            <th>Marca:</th>
+                            <!-- <th>Marca:</th> -->
                             <th>Quantidade:</th>
                             <th>Valor:</th>
                             <!-- <th>Total:</th> -->
@@ -49,13 +49,13 @@
                         ?>
                         <tr>
                             <td><?php echo date('d/m/Y', strtotime($dados['datacompra'])); ?></td>
-                            <td><?php echo $dados['estabelecimento']; ?></td>
+                            <!-- <td><?php //echo $dados['estabelecimento']; ?></td> -->
                             <td><?php echo $dados['produto']; ?></td>
-                            <td><?php echo $dados['marca']; ?></td>
+                            <!-- <td><?php //echo $dados['marca']; ?></td> -->
                             <td><?php echo $dados['quantidade']; ?></td>
                             <td>R$ <?php echo $dados['valor']; ?></td>
-                            <td><?php //echo $total;?> </td>
-                            <td><a href="detalhe.php?id=<?php echo $dados['id']; ?>" class="wave-ligth btn-small orange"><i class="material-icons left">description</i>Detalhe</a></td>
+                            <!-- <td><?php //echo $total;?> </td> -->
+                            <td><a href="detalhe.php?id=<?php echo $dados['id']; ?>" class="wave-ligth btn-small btn-floating orange"><i class="material-icons left">description</i></a></td>
                             <!-- <td><a href="editar.php?id=<?php //echo $dados['id']; ?>" class="btn-floating btn-small orange"><i class="material-icons">edit</i></a></td>-->
                             <!-- <td><a href="#modal<?php //echo $dados['id']; ?>" class="btn-floating btn-small red modal-trigger"><i class="material-icons">delete</i></a></td>  -->
 
@@ -99,6 +99,7 @@
                         ?>
 
                     </tbody>
+
                 </table>
                 <br>
                 <a href="adicionar.php" class="wave-ligth btn-small"><i class="material-icons left">add</i>Novo</a>
@@ -118,3 +119,4 @@
             // Footer
             include_once 'includes/footer.php';
         ?>
+ 
